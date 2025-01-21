@@ -16,7 +16,12 @@ Your one stop solution for cleaning dirty data in pandas dataframes.
 df = launder("/path/to/file", select_columns="columns to select", **default_pandas_kwargs)
 df = launder(df, select_columns="columns to select", **default_pandas_kwargs)
 
-convert_to_sql(df, table_name="name of sql table", output_path="file path where sql code will be written", step=1000)
+convert_to_sql(
+    df,
+    table_name="name of sql table",
+    output_path="file path where sql code will be written",
+    step=1000
+)
 ```
 
 # Installation
